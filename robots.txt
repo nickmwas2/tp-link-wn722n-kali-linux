@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://yourusername.github.io/tp-link-wn722n-kali-linux/sitemap.xml
