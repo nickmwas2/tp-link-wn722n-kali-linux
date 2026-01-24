@@ -164,23 +164,23 @@
 
         .marketplace-buttons-line {
     display: flex;
-    flex-direction: column;       /* stack buttons vertically */
-    align-items: center;          /* center horizontally */
-    gap: 10px;                    /* space between buttons */
+    flex-direction: column;   /* stack buttons vertically */
+    align-items: flex-start;   /* align to left */
+    gap: 10px;                 /* space between buttons */
     margin-top: 10px;
 }
 
 .marketplace-buttons-line a {
-    display: inline-block;        /* shrink to content */
+    display: inline-block;     /* shrink to content */
     text-align: center;
-    padding: 12px 30px;           /* add horizontal padding */
+    padding: 12px 30px;        /* padding inside buttons */
     border-radius: 6px;
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
     color: #ffffff;
     transition: all 0.2s ease-in-out;
-    min-width: 160px;             /* optional: consistent size */
+    min-width: 160px;          /* optional: same width for all buttons */
 }
 
 /* Individual brand colors */
@@ -485,6 +485,7 @@ buyer confidence.
 
 
 </html>
+
 
 
 
