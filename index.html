@@ -162,34 +162,35 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .marketplace-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 10px;
-        }
+        .marketplace-buttons-line {
+    display: flex;
+    flex-direction: column;       /* stack buttons vertically */
+    align-items: center;          /* center horizontally */
+    gap: 10px;                    /* space between buttons */
+    margin-top: 10px;
+}
 
-        .marketplace-buttons-line a {
-    display: block; /* each button on its own line */
+.marketplace-buttons-line a {
+    display: inline-block;        /* shrink to content */
     text-align: center;
-    padding: 12px 20px;
-    margin: 10px 0; /* space between buttons */
+    padding: 12px 30px;           /* add horizontal padding */
     border-radius: 6px;
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
     color: #ffffff;
     transition: all 0.2s ease-in-out;
+    min-width: 160px;             /* optional: consistent size */
 }
 
 /* Individual brand colors */
-.facebook-btn { background-color: #1877F2; } /* Facebook Blue */
+.facebook-btn { background-color: #1877F2; }
 .facebook-btn:hover { background-color: #145dbf; }
 
-.jiji-btn { background-color: #28a745; } /* Jiji Green */
+.jiji-btn { background-color: #28a745; }
 .jiji-btn:hover { background-color: #1e7a31; }
 
-.pigiame-btn { background-color: #dc3545; } /* Pigiame Red */
+.pigiame-btn { background-color: #dc3545; }
 .pigiame-btn:hover { background-color: #a52832; }
     </style>
 </head>
@@ -484,6 +485,7 @@ buyer confidence.
 
 
 </html>
+
 
 
 
