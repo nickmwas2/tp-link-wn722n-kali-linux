@@ -161,6 +161,30 @@
             font-weight: bold;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
+
+        .marketplace-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .marketplace-buttons a {
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            border: 1px solid #0a3d62;
+            color: #0a3d62;
+            background-color: #f1f8ff;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .marketplace-buttons a:hover {
+            background-color: #0a3d62;
+            color: #ffffff;
+        }
     </style>
 </head>
 
@@ -195,30 +219,26 @@
 
         <h3>Also Listed on Trusted Marketplaces</h3>
 
-<p>
-This TP-Link TL-WN722N v1 (AR9271) Wi-Fi adapter is also listed on trusted Kenyan
-marketplaces for buyer confidence and verification.
-</p>
+        <p>
+            This TP-Link TL-WN722N v1 (AR9271) Wi-Fi adapter is also listed on trusted Kenyan
+            marketplaces for buyer confidence and verification.
+        </p>
 
-<div class="marketplace-buttons">
-    <a href="https://www.facebook.com/share/1BqEfMgQbK/"
-       target="_blank" rel="noopener"
-       onclick="trackClick('Facebook Marketplace')">
-        Facebook Marketplace
-    </a>
+        <div class="marketplace-buttons">
+            <a href="https://www.facebook.com/share/1BqEfMgQbK/" target="_blank" rel="noopener"
+                onclick="trackClick('Facebook Marketplace')">
+                Facebook Marketplace
+            </a>
 
-    <a href="https://jiji.co.ke/ngara/computer-accessories/atheros-ar9271-wireless-adapter-for-kali-linux-zyLKOs1uKY7NUtmxDfZtKVLi.html"
-       target="_blank" rel="noopener"
-       onclick="trackClick('Jiji Kenya')">
-        Jiji Kenya
-    </a>
+            <a href="https://jiji.co.ke/ngara/computer-accessories/atheros-ar9271-wireless-adapter-for-kali-linux-zyLKOs1uKY7NUtmxDfZtKVLi.html"
+                target="_blank" rel="noopener" onclick="trackClick('Jiji Kenya')">
+                Jiji Kenya
+            </a>
 
-    <a href="#"
-       title="Pigiame listing coming soon"
-       onclick="trackClick('Pigiame')">
-        Pigiame (Coming Soon)
-    </a>
-</div>
+            <a href="#" title="Pigiame listing coming soon" onclick="trackClick('Pigiame')">
+                Pigiame (Coming Soon)
+            </a>
+        </div>
 
 
         <h3>Key Features</h3>
@@ -432,6 +452,18 @@ marketplaces for buyer confidence and verification.
 }
 </script>
 
+    <script>
+        function trackClick(platform) {
+            if (typeof gtag === 'function') {
+                gtag('event', 'marketplace_click', {
+                    'event_category': 'Outbound Link',
+                    'event_label': platform
+                });
+            }
+        }
+    </script>
+
+
 
 
 
@@ -439,6 +471,7 @@ marketplaces for buyer confidence and verification.
 
 
 </html>
+
 
 
 
